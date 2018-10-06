@@ -11,7 +11,7 @@ public class Agricultor {
 		cultivos = new ArrayList<Cultivable>();
 	}
 	
-	public Float calcularGanancia() {
+	public Float calculoGanancia() {
 		return (float) cultivos.stream().mapToInt(cultivable -> cultivable.getGanancia()).sum();
 	}
 }
